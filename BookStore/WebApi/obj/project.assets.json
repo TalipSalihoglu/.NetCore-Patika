@@ -1134,11 +1134,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EV\\Desktop\\BookStore\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\EV\\Desktop\\BookStore\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\EV\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EV\\Desktop\\BookStore\\WebApi\\obj\\",
+      "outputPath": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\EV\\AppData\\Roaming\\NuGet\\NuGet.Config",
