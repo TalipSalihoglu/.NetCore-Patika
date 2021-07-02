@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "PUNkvSnZRAoTNQTdgJBPK/AEGTKoBUL/ThX6pTiMRIrZGeW29mEijEg4FUyZc3WyrBFkYLl6uYYGWFDxggcsBA==",
+  "dgSpecHash": "zmkdsBnELWKZsDsSJvobX8dcS1BHdobSHUrJXYDFoMeuAmvqO6WJJrooPxT+GDiCXuMzd4xZiZecl2aPRSV8QQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\EV\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\EV\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.1\\microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.1\\microsoft.aspnetcore.authentication.openidconnect.5.0.1.nupkg.sha512",
-    "C:\\Users\\EV\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\EV\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.6\\microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.6\\microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.6\\microsoft.entityframeworkcore.analyzers.5.0.6.nupkg.sha512",
@@ -34,6 +36,7 @@
     "C:\\Users\\EV\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
+    "C:\\Users\\EV\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []

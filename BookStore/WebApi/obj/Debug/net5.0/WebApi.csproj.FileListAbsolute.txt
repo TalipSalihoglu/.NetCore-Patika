@@ -82,3 +82,5 @@ C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\obj\Debug\net5.0\WebApi.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\obj\Debug\net5.0\ref\WebApi.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\obj\Debug\net5.0\WebApi.pdb
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache
+C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
