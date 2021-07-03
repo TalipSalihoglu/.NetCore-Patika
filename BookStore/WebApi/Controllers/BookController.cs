@@ -9,6 +9,7 @@ using WebApi.BookOperations.GetBookDetail;
 using WebApi.DbOperations;
 using WebApi.BookOperations.DeleteBook;
 using AutoMapper;
+using FluentValidation;
 
 namespace WebApi.AddControllers
 {
@@ -26,7 +27,7 @@ namespace WebApi.AddControllers
  
         [HttpGet]
         public IActionResult GetBooks(){
-            GetBookQuery query= new GetBookQuery(_context,_mapper);
+            GetBooksQuery query= new GetBooksQuery(_context,_mapper);
             var result =query.Handle();
             return Ok(result);
         }
@@ -37,6 +38,8 @@ namespace WebApi.AddControllers
             GetBookDetailQuery query=new GetBookDetailQuery(_context,_mapper);
             try{
                 query.BookId=id;
+                GetBookDetailQueryValidator validator=new GetBookDetailQueryValidator();
+                validator.ValidateAndThrow(query);
                 result=query.Handle();
             }catch(Exception ex){
                 return BadRequest(ex.Message);
@@ -50,7 +53,10 @@ namespace WebApi.AddControllers
             try
             {
                 command.Model=newbook;
+                CreateBookCommandValidator validator=new CreateBookCommandValidator();
+                validator.ValidateAndThrow(command);
                 command.Handle();
+                
             }catch(Exception ex){
                 return BadRequest(ex.Message);
             }
@@ -64,6 +70,8 @@ namespace WebApi.AddControllers
             try{
                 command.model=updatedBook;
                 command.BookId=id;
+                UpdateBookCommandValidator validator=new UpdateBookCommandValidator();
+                validator.ValidateAndThrow(command);
                 command.Handle();
             }catch(Exception ex)
             {
@@ -77,6 +85,8 @@ namespace WebApi.AddControllers
             DeleteBookCommand command =new DeleteBookCommand(_context);
             try{
                 command.BookId=id;
+                DeleteBookCommandValidator validator=new DeleteBookCommandValidator();
+                validator.ValidateAndThrow(command);
                 command.Handle();
             }catch(Exception ex)
             {
