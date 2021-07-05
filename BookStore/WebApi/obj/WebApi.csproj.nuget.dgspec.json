@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\webapi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\webapi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\webapi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\webapi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\EV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EV\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -73,6 +73,10 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

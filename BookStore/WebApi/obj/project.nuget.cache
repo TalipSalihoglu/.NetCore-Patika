@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yjnnb0ikQs0ZkD3e08Rip+A/jVHmddrPrdwEo2OWbpZzLpnylY9UX0J6dUNWwR08T2CCzgAR3qwczyBG6jqWAg==",
+  "dgSpecHash": "5p4RyyACg4++7rKNxAbl3Tn+WsgBUufJAwHZoCmbiXX40Lrxg5bJdz8UUfLIMBriVvub+UbfKszztBYuYKGySA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\webapi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EV\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
@@ -29,6 +29,7 @@
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.7.1\\microsoft.identitymodel.protocols.openidconnect.6.7.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\EV\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",

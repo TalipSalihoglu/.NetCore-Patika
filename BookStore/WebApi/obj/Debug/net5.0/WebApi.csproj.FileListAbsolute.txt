@@ -85,3 +85,4 @@ C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\obj\Debug\net5.0\WebApi.gen
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\EV\Desktop\.NetCore-Patika\BookStore\webapi\bin\Debug\net5.0\Newtonsoft.Json.dll
