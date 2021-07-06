@@ -2,6 +2,8 @@ using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using WebApi.Entities;
+
 
 namespace WebApi.DbOperations{
     public class DataGenerator
@@ -12,10 +14,16 @@ namespace WebApi.DbOperations{
             serviceProvider.GetRequiredService<DbContextOptions<BookStoreDbContext>>()))
             {
                 // Look for any book.
-                if (context.Books.Any())
+                if (context.Books.Any() && context.Genres.Any())
                 {
                     return;   // Data was already seeded
                 }
+
+                context.Genres.AddRange(
+                    new Genre{ Name= "Personal Growth" },
+                    new Genre{ Name= "Science Fiction" },
+                    new Genre{ Name= "Romance"}
+                );
 
                 context.Books.AddRange(
                     new Book{Title="Lean Startup",GenreId=1,PageCount=200,PublishDate=new DateTime(2001,06,12)},

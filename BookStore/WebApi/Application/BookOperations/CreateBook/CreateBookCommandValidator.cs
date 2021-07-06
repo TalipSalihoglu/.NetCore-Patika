@@ -4,7 +4,7 @@ using AutoMapper;
 using FluentValidation;
 using WebApi.DbOperations;
 
-namespace WebApi.BookOperations.CreateBook
+namespace WebApi.Application.BookOperations.CreateBook
 {
     public class CreateBookCommandValidator : AbstractValidator<CreateBookCommand>
     {

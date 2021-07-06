@@ -4,7 +4,7 @@ using System.Linq;
 using WebApi.Common;
 using WebApi.DbOperations;
 
-namespace WebApi.BookOperations.UpdateBook{
+namespace WebApi.Application.BookOperations.UpdateBook{
     public class UpdateBookCommand
     {
         private readonly BookStoreDbContext _dbContext;
