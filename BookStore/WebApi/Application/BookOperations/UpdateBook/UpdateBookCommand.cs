@@ -20,6 +20,7 @@ namespace WebApi.Application.BookOperations.UpdateBook{
                 throw new InvalidOperationException("Kitap Bulunamadı");
 
             book.GenreId= model.GenreId != default ? model.GenreId:book.GenreId;
+            book.AuthorId= model.AuthorId != default ? model.AuthorId:book.AuthorId;
             book.PageCount= model.PageCount != default ? model.PageCount:book.PageCount;
             book.PublishDate= model.PublishDate != default ? model.PublishDate:book.PublishDate;
             book.Title= model.Title != default ? model.Title:book.Title;
@@ -32,5 +33,6 @@ namespace WebApi.Application.BookOperations.UpdateBook{
         public int PageCount { get; set; }
         public DateTime PublishDate { get; set; }
         public int GenreId { get; set; }
+        public int AuthorId { get; set; }
     }
 }
