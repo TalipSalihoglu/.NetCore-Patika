@@ -10,9 +10,9 @@ namespace WebApi.Application.BookOperations.GetBooks
 {
    public class GetBooksQuery
    {
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
         private readonly IMapper _mapper;
-        public GetBooksQuery(BookStoreDbContext context, IMapper mapper)
+        public GetBooksQuery(IBookStoreDbContext context, IMapper mapper)
         {
             _dbContext = context;
             _mapper = mapper;

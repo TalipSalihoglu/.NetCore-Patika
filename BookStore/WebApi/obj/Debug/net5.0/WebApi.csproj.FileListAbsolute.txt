@@ -49,6 +49,9 @@ C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\WebApi.run
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\WebApi.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\ref\WebApi.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\WebApi.pdb
+C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
@@ -61,6 +64,7 @@ C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\Microsoft.
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -82,7 +86,3 @@ C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\obj\Debug\net5.0\WebApi.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\obj\Debug\net5.0\ref\WebApi.dll
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\obj\Debug\net5.0\WebApi.pdb
 C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache
-C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\AutoMapper.dll
-C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\EV\Desktop\.NetCore-Patika\BookStore\WebApi\bin\Debug\net5.0\FluentValidation.dll
-C:\Users\EV\Desktop\.NetCore-Patika\BookStore\webapi\bin\Debug\net5.0\Newtonsoft.Json.dll
