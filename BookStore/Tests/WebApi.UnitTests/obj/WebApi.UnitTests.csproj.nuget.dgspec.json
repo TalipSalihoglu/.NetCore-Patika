@@ -150,7 +150,7 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[5.0.1, )",
+              "version": "[5.0.8, )",
               "noWarn": [
                 "NU1605"
               ]

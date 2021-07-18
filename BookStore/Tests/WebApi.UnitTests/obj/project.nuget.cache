@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3EGoZgNgRK6zhZuyscQV7FKVxoh7MMIimAOr/D8JgXrL62x0KS/wCDmZYCCm0ZVtawC6JdsZHIJkOHs6DbalrQ==",
+  "dgSpecHash": "bwI4HnnKtTrXXR0sQnnAz9Z6WbYbtUT2O8PpymYwo7DmwigABK5ZF6X0LLujHdhGD8GKX+ZXVyar0FXWtBAW0Q==",
   "success": true,
   "projectFilePath": "c:\\Users\\EV\\Desktop\\.NetCore-Patika\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,7 @@
     "C:\\Users\\EV\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512",
-    "C:\\Users\\EV\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.1\\microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",
+    "C:\\Users\\EV\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.8\\microsoft.aspnetcore.authentication.jwtbearer.5.0.8.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.1\\microsoft.aspnetcore.authentication.openidconnect.5.0.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
