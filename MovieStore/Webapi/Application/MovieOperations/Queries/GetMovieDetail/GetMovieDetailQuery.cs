@@ -4,6 +4,7 @@ using System.Linq;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Webapi.DbOperations;
+using Webapi.Entities;
 
 namespace WebApi.Application.MovieOperations.Queries.GetMovieDetail{
     public class GetMovieDetailQuery{
@@ -20,7 +21,16 @@ namespace WebApi.Application.MovieOperations.Queries.GetMovieDetail{
             if(movie is null)
                 throw new InvalidOperationException("Film bulunamadı.");
 
-            return _mapper.Map<MovieDetailViewModel>(movie);
+            var result = _mapper.Map<MovieDetailViewModel>(movie);
+
+            var list=_context.MovieActors.Include(x=>x.Actor).Where(x=>x.MovieId==MovieId).ToList();
+            foreach(var i in list)
+                result.Actors.Add(FullName(i.Actor));
+                
+            return result;
+        }
+        private string FullName(Actor actor){
+            return actor.Name+" "+actor.LastName;
         }
     }
     public class MovieDetailViewModel{
@@ -28,5 +38,7 @@ namespace WebApi.Application.MovieOperations.Queries.GetMovieDetail{
         public string Genre{get;set;}
         public string Director{get;set;}
         public decimal Price{get;set;}
+        public List<String> Actors{get;set;}
+         public bool isActive{get;set;}
     }
 }

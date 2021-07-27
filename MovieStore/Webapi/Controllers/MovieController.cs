@@ -3,6 +3,9 @@ using System.Linq;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Webapi.DbOperations;
+using WebApi.Application.MovieOperations.Commands.CreateMovie;
+using WebApi.Application.MovieOperations.Commands.DeleteMovie;
+using WebApi.Application.MovieOperations.Commands.UpdateMovie;
 using WebApi.Application.MovieOperations.Queries.GetMovieDetail;
 using WebApi.Application.MovieOperations.Queries.GetMovies;
 
@@ -34,6 +37,32 @@ namespace WebApi.Controllers
             query.MovieId=id;
             var result=query.Handle();
             return Ok(result);
+        }
+
+        [HttpPost]
+        public IActionResult AddMovie([FromBody] CreateMovieModel newMovie){
+            CreateMovieCommand command=new CreateMovieCommand(_context,_mapper);
+            command.Model=newMovie;
+            command.Handle();
+            return Ok();
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateMovie(int id,[FromBody] UpdateMovieModel updateMovie){
+            UpdateMovieCommand command= new UpdateMovieCommand(_context);
+            command.MovieId=id;
+            command.Model=updateMovie;
+            command.Handle();
+            return Ok();
+         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteMovie(int id)
+        {
+            DeleteMovieCommand command=new DeleteMovieCommand(_context);
+            command.MovieId=id;
+            command.Handle();
+            return Ok();
         }
     }
 }

@@ -20,11 +20,11 @@ namespace Webapi.DbOperations
                     }
 
                     context.Actors.AddRange(
-                    new Actor()
-                    {
-                       Name="Keanu",
-                       LastName="Reeves",
-                    });
+                        new Actor(){ Name="Keanu",LastName="Reeves"},
+                        new Actor(){ Name="Laurence", LastName="Fishburne"},
+                        new Actor(){ Name="Anne", LastName="Hathaway"},
+                        new Actor(){ Name="Matthew", LastName="McConaughey"}
+                    );
                     
                     context.Directors.AddRange(
                         new Director(){
@@ -42,7 +42,7 @@ namespace Webapi.DbOperations
                             Name="Matrix",
                             GenreId=1,
                             Price=12.4m,
-                            DirectorId=1
+                            DirectorId=1                
                         },
                         new Movie(){
                             Name="Interstellar",
@@ -50,6 +50,13 @@ namespace Webapi.DbOperations
                             Price=15.6m,
                             DirectorId=2
                         }
+                    );
+                    context.MovieActors.AddRange(
+                        new MovieActor(){ActorId=1,MovieId=1},
+                        new MovieActor(){ActorId=2,MovieId=1},
+                        new MovieActor(){ActorId=2,MovieId=2},
+                        new MovieActor(){ActorId=3,MovieId=2},
+                        new MovieActor(){ActorId=4,MovieId=2}
                     );
                     context.SaveChanges();
                 }
