@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yBaSMf4JnQsBf/km1DTMU+eucs1FDRnMbRII0ti2Ou32d3+m76SRTX2Nh2PGS7Q3alX+e1u4pFAPOLVcaMNCDQ==",
+  "dgSpecHash": "3MTpFJpZE3mbgwMLqXw1bsMYLa9M2UZ9NIPBoFjtdLeuJe+azAEohGPChe1F7+1XXuvlRUH06ndKgM/g8bFN+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\EV\\Desktop\\.NetCore-Patika\\MovieStore\\Webapi\\Webapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EV\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\EV\\.nuget\\packages\\fluentvalidation\\10.3.0\\fluentvalidation.10.3.0.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.1\\microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.1\\microsoft.aspnetcore.authentication.openidconnect.5.0.1.nupkg.sha512",
     "C:\\Users\\EV\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
