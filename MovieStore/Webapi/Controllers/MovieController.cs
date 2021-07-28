@@ -1,7 +1,12 @@
 using System;
 using System.Linq;
 using AutoMapper;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using Webapi.Application.MovieOperations.Commands.CreateMovie;
+using Webapi.Application.MovieOperations.Commands.DeleteMovie;
+using Webapi.Application.MovieOperations.Commands.UpdateMovie;
+using Webapi.Application.MovieOperations.Queries.GetMovieDetai;
 using Webapi.DbOperations;
 using WebApi.Application.MovieOperations.Commands.CreateMovie;
 using WebApi.Application.MovieOperations.Commands.DeleteMovie;
@@ -35,7 +40,12 @@ namespace WebApi.Controllers
         public IActionResult GetMovies(int id){
             GetMovieDetailQuery query=new GetMovieDetailQuery(_context,_mapper);
             query.MovieId=id;
+
+            GetMovieDetailQueryValidator validations=new GetMovieDetailQueryValidator();
+            validations.ValidateAndThrow(query);
+
             var result=query.Handle();
+
             return Ok(result);
         }
 
@@ -43,6 +53,10 @@ namespace WebApi.Controllers
         public IActionResult AddMovie([FromBody] CreateMovieModel newMovie){
             CreateMovieCommand command=new CreateMovieCommand(_context,_mapper);
             command.Model=newMovie;
+
+            CreateMovieCommandValidator validations=new CreateMovieCommandValidator();
+            validations.ValidateAndThrow(command);
+
             command.Handle();
             return Ok();
         }
@@ -52,6 +66,10 @@ namespace WebApi.Controllers
             UpdateMovieCommand command= new UpdateMovieCommand(_context);
             command.MovieId=id;
             command.Model=updateMovie;
+
+            UpdateMovieCommandValidator validations=new UpdateMovieCommandValidator();
+            validations.ValidateAndThrow(command);
+
             command.Handle();
             return Ok();
          }
@@ -61,6 +79,10 @@ namespace WebApi.Controllers
         {
             DeleteMovieCommand command=new DeleteMovieCommand(_context);
             command.MovieId=id;
+
+            DeleteMovieCommandValidator validations=new DeleteMovieCommandValidator();
+            validations.ValidateAndThrow(command);
+
             command.Handle();
             return Ok();
         }
