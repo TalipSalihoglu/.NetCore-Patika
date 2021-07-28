@@ -14,6 +14,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Webapi.DbOperations;
+using WebApi.Middlewares;
+using WebApi.Services;
 
 namespace Webapi
 {
@@ -36,7 +38,7 @@ namespace Webapi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Webapi", Version = "v1" });
             });
-           
+           services.AddSingleton<ILoggerService,ConsoleLogger>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,11 +52,10 @@ namespace Webapi
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseCustomExceptionMiddle();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

@@ -42,13 +42,15 @@ namespace Webapi.DbOperations
                             Name="Matrix",
                             GenreId=1,
                             Price=12.4m,
-                            DirectorId=1                
+                            DirectorId=1,
+                            PublishDate=new DateTime(1997,05,12)                
                         },
                         new Movie(){
                             Name="Interstellar",
                             GenreId=1,
                             Price=15.6m,
-                            DirectorId=2
+                            DirectorId=2,
+                            PublishDate=new DateTime(1995,11,19) 
                         }
                     );
                     context.MovieActors.AddRange(

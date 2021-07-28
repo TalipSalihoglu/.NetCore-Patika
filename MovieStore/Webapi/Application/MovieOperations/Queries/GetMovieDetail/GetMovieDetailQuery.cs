@@ -39,6 +39,7 @@ namespace WebApi.Application.MovieOperations.Queries.GetMovieDetail{
         public string Director{get;set;}
         public decimal Price{get;set;}
         public List<String> Actors{get;set;}
-         public bool isActive{get;set;}
+        public bool isActive{get;set;}
+        public DateTime PublishDate { get; set; }
     }
 }

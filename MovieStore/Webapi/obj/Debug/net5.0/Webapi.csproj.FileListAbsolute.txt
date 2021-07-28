@@ -42,3 +42,4 @@ C:\Users\EV\Desktop\.NetCore-Patika\MovieStore\Webapi\bin\Debug\net5.0\Microsoft
 C:\Users\EV\Desktop\.NetCore-Patika\MovieStore\Webapi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\EV\Desktop\.NetCore-Patika\MovieStore\Webapi\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\EV\Desktop\.NetCore-Patika\MovieStore\Webapi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\EV\Desktop\.NetCore-Patika\MovieStore\Webapi\bin\Debug\net5.0\Newtonsoft.Json.dll

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
@@ -23,5 +24,6 @@ namespace WebApi.Application.MovieOperations.Queries.GetMovies{
         public string Genre{get;set;}
         public string Director{get;set;}
         public decimal Price{get;set;}
+        public DateTime PublishDate { get; set; }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Webapi.Entities{
@@ -7,9 +8,11 @@ namespace Webapi.Entities{
         public int GenreId{get;set;}
         public int DirectorId{get;set;}
         public Director Director{get;set;}
+        public DateTime PublishDate { get; set; }
+        public bool isActive{get;set;}=true;
+
        public virtual ICollection<MovieActor> MovieActors{get;set;}
 
         public decimal Price{get;set;}
-        public bool isActive{get;set;}=true;
     }
 }
