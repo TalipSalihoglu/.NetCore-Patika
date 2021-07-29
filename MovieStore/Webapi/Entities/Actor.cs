@@ -5,6 +5,7 @@ namespace Webapi.Entities{
         public int Id{get;set;}
         public string Name{get;set;}
         public string LastName{get;set;}
+        public bool isActive{get;set;}
         public virtual ICollection<MovieActor> MovieActors{get;set;}
     }
 }
