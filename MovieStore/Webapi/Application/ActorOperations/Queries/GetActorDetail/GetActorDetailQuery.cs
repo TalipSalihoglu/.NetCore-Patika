@@ -34,6 +34,8 @@ namespace Webapi.Application.ActorOperations.Commands.Queries.GetActorDetail
     {
         public string Name{get;set;}
         public string LastName{get;set;}
+        
+        public bool isActive{get;set;}
         public List<String> Movies{get;set;}
     }
 }

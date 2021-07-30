@@ -17,7 +17,7 @@ namespace Webapi.Application.ActorOperations.Commands.Queries.GetActors
         }
         public List<GetActorsQueryModel> Handle(){
 
-            var actors=_context.Actors.ToList();
+            var actors=_context.Actors.Where(x=>x.isActive).ToList();
             return _mapper.Map<List<GetActorsQueryModel>>(actors);
         }
     }
