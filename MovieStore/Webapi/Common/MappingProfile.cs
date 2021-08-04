@@ -10,6 +10,8 @@ using Webapi.Application.DirectorOperations.Queries.GetDirectorDetail;
 using Webapi.Application.ActorOperations.Commands.Queries.GetActors;
 using Webapi.Application.ActorOperations.Commands.Queries.GetActorDetail;
 using Webapi.Application.ActorOperations.Commands.CreateActor;
+using Webapi.Application.CustomerOperations.Commands.CreateCustomer;
+using WebApi.Application.CustomerOperations.Queries.GetCustomerDetail;
 
 namespace WebApi.Common{
     public class MappingProfile:Profile
@@ -35,6 +37,10 @@ namespace WebApi.Common{
             CreateMap<Actor,GetActorsQueryModel>();
             CreateMap<Actor,ActorDetailModel>().ForMember(dest=>dest.Movies,opt=>opt.MapFrom(src=>src.MovieActors));
             CreateMap<CreateActorModel ,Actor>();
+
+            // Customer Operations
+            CreateMap<CreateCustomerModel,Customer>();
+            CreateMap<Customer,CustomerDetailViewModel>();
         }
     }
 }
