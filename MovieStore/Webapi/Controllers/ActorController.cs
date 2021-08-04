@@ -22,14 +22,14 @@ namespace Webapi.Controllers
             _mapper = mapper;
         }
         [HttpGet]
-        public IActionResult GetActionResult(){
+        public IActionResult GetActor(){
             GetActorsQuery query=new GetActorsQuery(_context,_mapper);
             var result=query.Handle();
             return Ok(result);
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetActionResult(int id){
+        public IActionResult GetActorDetail(int id){
             GetActorDetailQuery query=new  GetActorDetailQuery(_context,_mapper);
             query.ActorId=id;
 
