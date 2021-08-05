@@ -14,6 +14,7 @@ namespace Webapi.DbOperations
         public DbSet<MovieActor> MovieActors { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<FavoriteGenre> FavoriteGenres { get; set; }
+        public DbSet<Order> Orders { get; set; }        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new MovieActorEntityConfiguration());

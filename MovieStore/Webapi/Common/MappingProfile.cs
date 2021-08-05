@@ -12,6 +12,9 @@ using Webapi.Application.ActorOperations.Commands.Queries.GetActorDetail;
 using Webapi.Application.ActorOperations.Commands.CreateActor;
 using Webapi.Application.CustomerOperations.Commands.CreateCustomer;
 using WebApi.Application.CustomerOperations.Queries.GetCustomerDetail;
+using Webapi.Application.OrderOpearations.Commands.CreateOrder;
+using Webapi.Application.OrderOpearations.Queries.GetOrder;
+using Webapi.Application.OrderOpearations.Queries.GetOrderDetail;
 
 namespace WebApi.Common{
     public class MappingProfile:Profile
@@ -41,6 +44,16 @@ namespace WebApi.Common{
             // Customer Operations
             CreateMap<CreateCustomerModel,Customer>();
             CreateMap<Customer,CustomerDetailViewModel>();
+
+            //Order Operations
+            CreateMap<CreateOrderModel,Order>();
+            
+            CreateMap<Order,OrderViewModel>().ForMember(dest=>dest.MovieName,opt=>opt.MapFrom(src=>src.Movie.Name))
+            .ForMember(dest=>dest.CustomerName,opt=>opt.MapFrom(src=>src.Customer.Name));
+
+             CreateMap<Order,OrderDetailViewModel>().ForMember(dest=>dest.MovieName,opt=>opt.MapFrom(src=>src.Movie.Name))
+            .ForMember(dest=>dest.CustomerName,opt=>opt.MapFrom(src=>src.Customer.Name));
+
         }
     }
 }

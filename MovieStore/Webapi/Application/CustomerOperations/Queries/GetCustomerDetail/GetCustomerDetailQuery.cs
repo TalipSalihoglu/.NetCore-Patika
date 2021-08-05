@@ -29,7 +29,13 @@ namespace WebApi.Application.CustomerOperations.Queries.GetCustomerDetail{
             {
                 result.FavoriteGenres.Add(((GenreEnum)i.GenreId).ToString());
             }
- 
+
+            var orders=_context.Orders.Include(x=>x.Movie).Where(x=>x.CustomerId==CustomerId);
+            foreach(var i in orders)
+            {
+                result.Orders.Add(i.Movie.Name);
+            }
+
             return result;
         }
         private string FullName(Actor actor){
@@ -41,5 +47,6 @@ namespace WebApi.Application.CustomerOperations.Queries.GetCustomerDetail{
         public string LastName{get;set;}
         public bool isActive{get;set;}
         public List<String> FavoriteGenres{get;set;}
+        public List<string> Orders{get;set;}
     }
 }

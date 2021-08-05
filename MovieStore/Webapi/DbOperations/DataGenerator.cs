@@ -60,6 +60,10 @@ namespace Webapi.DbOperations
                         new MovieActor(){ActorId=3,MovieId=2},
                         new MovieActor(){ActorId=4,MovieId=2}
                     );
+                    context.Customers.AddRange(
+                        new Customer(){Name="Talip",LastName="Salih"},
+                        new Customer(){Name="Derya",LastName="Dede",}
+                    );
                     context.SaveChanges();
                 }
         }
