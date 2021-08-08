@@ -3,6 +3,7 @@ using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Webapi.Application.OrderOpearations.Commands.CreateOrder;
 using Webapi.Application.OrderOpearations.Commands.DeleteOrder;
+using Webapi.Application.OrderOpearations.Commands.UpdateOrder;
 using Webapi.Application.OrderOpearations.Queries.GetOrder;
 using Webapi.Application.OrderOpearations.Queries.GetOrderDetail;
 using Webapi.DbOperations;
@@ -64,11 +65,17 @@ namespace WebApi.Controllers
 
         }
 
-        // [HttpPut("{id}")]
-        // public IActionResult UpdateOrder(int id){
-           
-        //    //TODO
+        [HttpPut("{id}")]
+        public IActionResult UpdateOrder(int id,[FromBody] UpdateOrderModel model){
+           UpdateOrderCommand command=new UpdateOrderCommand(_context);
+           command.OrderId=id;
+           command.Model=model;
 
-        // }
+           UpdateOrderCommandValidator validations=new UpdateOrderCommandValidator();
+           validations.ValidateAndThrow(command);
+
+           command.Handle();
+           return Ok();
+        }
     }
 }
